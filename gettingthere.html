@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    height: 100%;
+    margin: 0px;
+  }
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.topnav-left {
+  float:left;
+}
+
+.topnav a {
+  float:left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+.image {
+  display: block;
+  width: 100%;
+  height: 91.5vh;
+  object-fit: cover
+  opacity:0.85;
+
+}
+
+.text {
+  color: #000000;
+  font-size: 40px;
+  position: absolute;
+  top: 33%;
+  left: 51%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-style:italic;
+  text-align: center;
+}
+
+.text-block {
+  position: absolute;
+  padding: 50px 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  opacity: 0.75;
+  background-color:#ffffff;
+  font-family: Century Gothic, sans-serif;
+}
+
+.title-text
+{
+   border-top: solid;
+   border-bottom: solid;
+   border-color:#6E6E6E;
+  
+}
+
+#myBtn {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  color: black;
+  border: 2.5px solid  #000000;
+  position: absolute;
+  top: 85%;
+  left: 18%;
+  font-size:20px;
+  transform: translate(-50%, -50%);
+  border-style: groove;
+  cursor:pointer;
+  font-weight: bold;
+}
+
+#myBtn:hover {
+   background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.7); 
+  border: #4CAF50;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: 2.5px solid #FFFFFF;
+ }
+
+#myBtn2 {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  color: black;
+  border: 2.5px solid  #000000;
+  position: absolute;
+  top: 85%;
+  left: 48%;
+  font-size:20px;
+  transform: translate(-50%, -50%);
+  border-style: groove;
+  cursor:pointer;
+  font-weight: bold;
+}
+
+#myBtn2:hover {
+   background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.7); 
+  border: #4CAF50;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: 2.5px solid #FFFFFF;
+ }
+
+#myBtn3 {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  color: black;
+  border: 2.5px solid  #000000;
+  position: absolute;
+  top: 85%;
+  left: 80%;
+  font-size:20px;
+  transform: translate(-50%, -50%);
+  border-style: groove;
+  cursor:pointer;
+  font-weight: bold;
+}
+
+#myBtn3:hover {
+   background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.7); 
+  border: #4CAF50;
+  color: #FFFFFF;
+  font-weight: bold;
+  border: 2.5px solid #FFFFFF;
+}
+
+#myBtn4 {
+  background-color:#DAEEBE;
+  padding: 10px 30px;
+  color: black;
+  border: 2.5px solid #000000;
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  font-size:20px;
+  transform: translate(-50%, -50%);
+  border-style: groove;
+  cursor:pointer;
+  font-weight: bold;
+}
+
+#myBtn4:hover {
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0, 0.3); 
+  border: #f2f2f2;
+  color: #f1f1f1;
+  font-weight: bold;
+  border: 2.5px solid #f2f2f2;
+ }
+
+
+.middle
+{
+   padding:45px 80px;
+   background-color: #DAEEBE;
+   background-repeat: no-repeat;
+   background-size: cover;
+   filter: grayscale(50%);
+}
+
+.container img
+{
+  border-bottom-style:double;
+}
+
+.middle2
+{
+   padding-top:50px;
+   padding-right:30px;
+   padding-bottom:100px;
+   padding-left:100px;
+   background-color:#7AC07E;
+   background-repeat: no-repeat;
+   background-size: cover;
+   filter: grayscale(50%);
+}
+
+.middle3
+{
+   padding-top:50px;
+   padding-right:30px;
+   padding-bottom:100px;
+   padding-left:200px;
+   background-color:#DAEEBE;
+   background-repeat: no-repeat;
+   background-size: cover;
+   filter: grayscale(50%);
+   height:600px;
+}
+
+
+.middle4
+{
+   padding-top:50px;
+   padding-right:30px;
+   padding-bottom:200px;
+   padding-left:200px;
+   background-color:#7AC07E;
+   background-repeat: no-repeat;
+   background-size: cover;
+   filter: grayscale(50%);
+}
+
+.content
+{
+   empty-cells: hide;
+   padding-left:50px;
+}
+
+
+.content tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+iframe{
+   display:block;
+   margin: 0 auto;
+}
+
+.rates
+{
+  border:1;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="topnav">
+  <div class="topnav-right">
+  <a href="home.html">Home</a>
+  <a href="activities.html">Activites</a>
+  <a href="gallery.html">Gallery</a>
+  <a class="active" href="#gettingthere">Getting There</a>
+  </div>
+  <div class="topnav-left">
+  <a href="index.html">Cover Page</a>
+  </div>
+</div>
+
+<div class="container" id="container">
+  <img src="stair.jpg"class="image">
+</div>
+    <div class="text-block"id="top">
+    <i><p style="font-family:Arial;font-size:15px;color:black;text-align:center;">Park Lighting Hours :7.00pm to 7.00am</p></i>
+    <i><p class="title-text">Getting There </p><i>
+    <button onclick="myFunction()" id="myBtn" title="By Car">By Car</button>
+    <button onclick="myFunction3()" id="myBtn2" title="By Bus">By Bus</button>
+    <button onclick="myFunction4()" id="myBtn3" title="By Train">By Train</button>
+  </div>
+
+<script>
+function myFunction() {
+  var elmnt = document.getElementById("car");
+  elmnt.scrollIntoView();
+}
+function myFunction2() {
+  var elmnt = document.getElementById("top");
+  elmnt.scrollIntoView({behavior: "smooth"});
+}
+function myFunction3() {
+  var elmnt = document.getElementById("bus");
+  elmnt.scrollIntoView();
+}
+
+function myFunction4() {
+  var elmnt = document.getElementById("train");
+  elmnt.scrollIntoView();
+}
+</script> 
+
+
+<div class="middle" id="middle">
+
+<table class="content">
+  <h1 style="text-align:center;">Location</h1>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31909.759866243527!2d103.80449436716037!3d1.3444320372435685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da174a834d5455%3A0x3ea3612250057dc4!2sMacRitchie%20Reservoir!5e0!3m2!1sen!2ssg!4v1586724766178!5m2!1sen!2ssg" width="1100" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" align="center"></iframe>
+</table>
+<td>
+<p style="text-align:center; padding-top:0%;" align="center">Along Lornie Road <br>Singapore 298717</p>
+</td>
+</div>
+
+
+<div class="middle2" id="car">
+<h2 style="text-align:center; padding-right:75%;">By Car</h2>
+<img src="car.png"class="imageabout" align = "left" hspace="80" style="width:30%; height:50%; margin-top:10%;">
+<table class="content" style="text-align:center;border-collapse: collapse; margin-left:50%;" >
+<tr>
+  <td colspan="2"><p style="text-align:center;font-size:15px;" align="right"><strong>*If you are driving, do take note of the CarPark Rates below:</strong></p></td>
+</tr>
+  <tr style="border:2px solid #000000;">
+  <col width="250">
+  <col width="300">
+    <th height="80" style="border:2px solid #000000;">Days</th>
+    <th height="80" style="border:2px solid #000000;">Pricing</th>
+  </tr>
+  <tr style="border:2px solid #000000;">
+    <td  height="80" style="border:2px solid #000000;">Monday-Friday<br>After 5/6 PM</td>
+    <td  height="80" style="border:2px solid #000000;">$0.0167/min from 10.30pm to 7am <br>the following day, capped at $4.00 </td>
+  </tr>
+  <tr style="border:2px solid #000000;">
+    <td height="80" style="border:2px solid #000000;">Saturday</td>
+    <td height="80" style="border:2px solid #000000;">Charges same as weekdays </td>
+  </tr>
+<tr style="border:2px solid #000000;">
+    <td height="80" style="border:2px solid #000000;">Sunday/Public Holidays</td>
+    <td height="80" style="border:2px solid #000000;">Charges same as weekdays </td>
+  </tr>
+<tr style="border:2px solid #000000;">
+    <td height="80" style="border:2px solid #000000;">Remarks</td>
+    <td height="80" style="border:2px solid #000000;">10 Minutes grace period </td>
+  </tr>
+</table>
+</div>
+
+
+<div class="middle3" id="bus">
+<h2 style="padding-left:51%;">By Bus</h2>
+<img src="bus.png"class="imageabout" align = "right" hspace="120" style="width:30%; height:80%; margin-right:20%;">
+<table class="content2"style="text-align:center; margin-top:7%;">  
+  <tr>
+  <td><p style="text-align:center;font-size:15px;"><strong>Nearest Bus Stop 51071</strong></p></td>
+  </tr>
+  <tr>
+  <td><p style="text-align:center;font-size:15px;">(Bus 52, 74, 93, 157,130, 132, 156, 157, 162, 162M, 165, 166, 167, 852 and 855, 980)</p></td>
+  </tr>
+  </table>
+</div>
+
+
+
+<div class="middle4" id="train">
+<h2 style="text-align:left;padding-right:75%;">By Train</h2>
+<img src="train.png"class="imageabout" align = "left" hspace="120" style="width:30%; height:55vh; margin-top:5%; margin-left:0%;">
+<table class="content3"style="text-align:left;">
+  <tr>
+  <td><p style="text-align:center; padding-top:12%;" align="right"><strong>Nearest MRT: Marymount MRT (CC17)</strong></p></td>
+  </tr>
+  <tr>
+  <td><p style="text-align:center;padding-top:0%;" align="justify"> Marymount station is approximately 1 km away from<br> Macritchie Reservoir Park.</p>
+<br>  
+<ol>
+  <li>Alight at Marymount station.</li><br><li>Walk for 4 minutes (Approx. 402 meters)</li><br><li>Take a bus (services 52,165,855) and alight before<br>Andrew Road(4 Mins)</li></ol></td>
+</tr>
+</table>
+<br><br>
+<button onclick="myFunction2()" id="myBtn4" title="Getting There" style="margin-top:3%">Back to top</button>
+</div>
+
+
+
+
+
+</body>
+</html>
